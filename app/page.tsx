@@ -24,7 +24,7 @@ export default function Home() {
         <ParticleBackground />
         <Drawer />
         <div className="flex flex-col md:flex-row z-10 mx-auto mt-12">
-          <div className='w-3/3 md:w-2/3 p-4 text-slate-100 text-sm md:text-sm lg:text-base h-96'>
+          <div className='w-3/3 md:w-2/3 p-4 text-slate-100 text-sm md:text-sm lg:text-base'>
             <h2 className='text-4xl md:text-5xl lg:text-5xl'>Zapraszam do prezentacji mojego portfolio.</h2>
             <p className='text-slate-100 mt-4'>Piotr Ch.</p>
           </div>
@@ -61,12 +61,8 @@ export default function Home() {
               <p className="flex items-center"><FaVimeoV size={24} className='mr-4' />Prezentacja:</p>
                 <VimeoPlayer videoId="949290898" aspectRatio="16:9" />
               </AccordionItem>
-              <AccordionItem title="Link do aplikacji">
-                <Image src="/images/logos/Vercel_logo_black.png" width={1024} height={234} alt="Vercel_logo_black" className="mt-2" />
-                <LinkText to="https://mv-app-ruby.vercel.app/" newTab={true}>mv-app-ruby.vercel.app <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
-              </AccordionItem>
             </AccordionList>
-            <GlassButton text="Szczegóły projektu" fullWidth={true} />
+            <GlassButton text="Przejdź do aplikacji" fullWidth={true} url='https://mv-app-ruby.vercel.app/' newTab={true} />
           </div>
         </div>
         {/* --- */}
@@ -96,13 +92,8 @@ export default function Home() {
               <p className="flex items-center"><FaVimeoV size={24} className='mr-4' />Prezentacja:</p>
                 <VimeoPlayer videoId="949966044" aspectRatio="16:9" />
               </AccordionItem>
-              <AccordionItem title="Link do aplikacji">
-                <Image src="/images/logos/Vercel_logo_black.png" width={1024} height={234} alt="Vercel_logo_black" className="mt-2" />
-                <LinkText to="https://game-app-eta.vercel.app/" newTab={true}>game-app-eta.vercel.app <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
-              </AccordionItem>
             </AccordionList>
-
-            <GlassButton text="Szczegóły projektu" fullWidth={true} />
+            <GlassButton text="Przejdź do aplikacji" fullWidth={true} url='https://game-app-eta.vercel.app/' newTab={true} />
           </div>
         </div>
         {/* --- */}
@@ -136,13 +127,8 @@ export default function Home() {
                 <p className="flex items-center"><FaVimeoV size={24} className='mr-4' />Prezentacja:</p>
                 <VimeoPlayer videoId="950017470" aspectRatio="16:9" />
               </AccordionItem>
-              <AccordionItem title="Link do aplikacji">
-                <Image src="/images/logos/Vercel_logo_black.png" width={1024} height={234} alt="Vercel_logo_black" className="mt-2" />
-                <LinkText to="https://spot-app-tawny.vercel.app/" newTab={true}>spot-app-tawny.vercel.app <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
-              </AccordionItem>
             </AccordionList>
-
-            <GlassButton text="Szczegóły projektu" fullWidth={true} />
+            <GlassButton text="Przejdź do aplikacji" fullWidth={true} url='https://spot-app-tawny.vercel.app/' newTab={true} />
           </div>
         </div>
         {/* --- */}
@@ -175,13 +161,8 @@ export default function Home() {
               <p className="flex items-center"><FaVimeoV size={24} className='mr-4' />Prezentacja:</p>
                 <VimeoPlayer videoId="950019759" aspectRatio="16:9" />
               </AccordionItem>
-              <AccordionItem title="Link do aplikacji">
-                <Image src="/images/logos/Vercel_logo_black.png" width={1024} height={234} alt="Vercel_logo_black" className="mt-2" />
-                <LinkText to="https://env-app.vercel.app/" newTab={true}>env-app.vercel.app <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
-              </AccordionItem>
             </AccordionList>
-
-            <GlassButton text="Szczegóły projektu" fullWidth={true} />
+            <GlassButton text="Przejdź do aplikacji" fullWidth={true} url='https://env-app.vercel.app/' newTab={true} />
           </div>
         </div>
         {/* --- */}
@@ -194,9 +175,7 @@ export default function Home() {
             <h2 className='text-2xl md:text-4xl bg-gradient-to-tr from-blue-100 via-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-4'>BLOG OSOBISTY</h2>
             <p>Khaz - marka biuterii z kryształów.</p>
             <p>Moje projekty biuterii z kryształów SWAROVSKI® ELEMENTS.</p>
-
             <ImageSlider images={khaz_images} />
-
           </div>
           <div className='w-3/3 md:w-1/3 m-2 md:m-0 text-cyan-100 text-sm md:text-sm lg:text-base h-96'>
             <AccordionList>
@@ -220,12 +199,8 @@ export default function Home() {
                 <LinkText to="https://www.facebook.com/khaz.bizuteria/" newTab={true}>facebook.com/khaz.bizuteria <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
               </p>
               </AccordionItem>
-              <AccordionItem title="Link do strony">
-                <LinkText to="http://blog.khaz.pl" newTab={true}>blog.khaz.pl <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
-              </AccordionItem>
             </AccordionList>
-
-            <GlassButton text="Szczegóły projektu" fullWidth={true} />
+            <GlassButton text="Przejdź do strony" fullWidth={true} url='http://blog.khaz.pl' newTab={true} />
           </div>
         </div>
         {/* --- */}
@@ -238,15 +213,12 @@ export default function Home() {
             <h2 className='text-2xl md:text-4xl bg-gradient-to-tr from-blue-100 via-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-4'>PCH NET</h2>
             <p>Strona internetowa z szablonami TemplateMonster.</p>
             <p>Strona www.pch.net.pl oferuje różnorodne szablony stron internetowych dostępne w serwisie TemplateMonster. Jest to idealne miejsce dla osób poszukujących profesjonalnych i estetycznych rozwiązań do tworzenia stron internetowych. Na stronie można znaleźć szeroki wybór szablonów, które można łatwo dostosować do indywidualnych potrzeb. Szablony są przeznaczone zarówno dla firm, jak i użytkowników indywidualnych, którzy chcą stworzyć atrakcyjne witryny internetowe bez konieczności posiadania zaawansowanej wiedzy technicznej.</p>
-
             <ImageSlider images={pch_net_images} />
-
           </div>
           <div className='w-3/3 md:w-1/3 m-2 md:m-0 text-cyan-100 text-sm md:text-sm lg:text-base h-96'>
             <AccordionList>
               <AccordionItem title="Technologie">
                 <p>Wordpress</p>
-
               </AccordionItem>
               <AccordionItem title="Banery reklamowe">
                 <Image src="/images/pch/baner-rwd-1-960x250px.jpg" width={960} height={250} alt="baner-rwd-1-960x250px" className="mt-2" />
@@ -260,12 +232,8 @@ export default function Home() {
               <AccordionItem title="Link aff. TemplateMonster">
                 <LinkText to="https://www.templatemonster.com/?aff=PCh_net" newTab={true}>www.templatemonster.com/?aff=PCh_net <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
               </AccordionItem>
-              <AccordionItem title="Link do strony">
-                <LinkText to="http://pch.net.pl" newTab={true}>pch.net.pl <FaArrowUpRightFromSquare size={12} className='ml-2' /></LinkText>
-              </AccordionItem>
             </AccordionList>
-
-            <GlassButton text="Szczegóły projektu" fullWidth={true} />
+            <GlassButton text="Przejdź do strony" fullWidth={true} url='http://pch.net.pl' newTab={true} />
           </div>
         </div>
         {/* --- */}
